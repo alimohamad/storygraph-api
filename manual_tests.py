@@ -29,11 +29,11 @@ print(book.book_info(id))
 # print(user.books_read(uname,cookie=cookie))
 
 #
-# from storygraph_api.users_client import User
-# from dotenv import load_dotenv
-# load_dotenv()
-# cookie = os.getenv('COOKIE')
-# uname = 'clyrmze'
-# user = User()
-# result = user.books_read(uname,cookie=cookie)
-# print(result)
+from storygraph_api.users_client import User
+from dotenv import load_dotenv
+load_dotenv()
+cookie = os.getenv('COOKIE')
+uname = 'alaiyo'
+user = User()
+result = user.books_read(uname,cookie=cookie)
+print(result)
