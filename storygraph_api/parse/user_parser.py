@@ -25,9 +25,7 @@ class UserParser:
             if endpoint == Endpoints.BooksRead:
                 date_finished_string = soup.find(string=re.compile("Finished"))
                 if date_finished_string:
-                    print("?")
                     date = datetime.strptime(str(date_finished_string), 'Finished %b %d, %Y\n').date().isoformat()
-                    print("DATE:?", date)
                     book_data['date_finished'] = date
 
 
